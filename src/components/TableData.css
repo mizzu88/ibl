@@ -1,0 +1,15 @@
+
+.customTable {
+    border-collapse: collapse;
+  }
+  
+  .customTable th,
+  .customTable td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+  
+  .greyRow {
+    background-color: #d1cbcb;
+  }
+  

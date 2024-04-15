@@ -1,0 +1,67 @@
+/* ResponsiveForm.css */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+   
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    margin-right: 30px;
+    display: inline-block;
+  }
+  
+  button[type=submit] {
+    background-color: #cac6c6;
+    float: right;
+  }
+  
+  .error-message {
+    color: red;
+  }
+
+  
+  .container {
+    border: 1px solid hsl(0, 0%, 74%);
+    padding: 20px;
+    background-color: #f5f2f2;
+    margin-top: 20px;
+    max-width: 600px;
+    align-items: center;
+    position: relative;
+    top: 0; 
+    left: 50%;
+    transform: translateX(-50%); 
+    
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 400px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
